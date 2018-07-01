@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1009436120986-3rvlq7gmdut0prfd6no3k89gub2nrbrl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1009436120986-3rvlq7gmdut0prfd6no3k89gub2nrbrl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmZmDDuE3YWdRJpKNqaXw_5IBr1Uo57VI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1009436120986</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>www.motionmentoring.org.MChatApp</string>
+	<key>PROJECT_ID</key>
+	<string>mchatapp-ced8f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mchatapp-ced8f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1009436120986:ios:cec9dc758b40f397</string>
+	<key>DATABASE_URL</key>
+	<string>https://mchatapp-ced8f.firebaseio.com</string>
+</dict>
+</plist>

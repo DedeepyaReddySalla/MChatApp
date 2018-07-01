@@ -14,6 +14,10 @@
 		3F750B7020E8F17000C80644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F750B6E20E8F17000C80644 /* LaunchScreen.storyboard */; };
 		3F750B7B20E8F17000C80644 /* MChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B7A20E8F17000C80644 /* MChatAppTests.swift */; };
 		3F750B8620E8F17000C80644 /* MChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B8520E8F17000C80644 /* MChatAppUITests.swift */; };
+		3F750B9520E8FACA00C80644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */; };
+		4F3DE412F409B9811DB1D537 /* Pods_MChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF60FCD7093C32143B949799 /* Pods_MChatApp.framework */; };
+		76C3B85A3FF6EB8FAAB61130 /* Pods_MChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8419A237DE690FD5E163E58D /* Pods_MChatAppUITests.framework */; };
+		9616622D417670E90B956A87 /* Pods_MChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC0191E85226E9E3AAE4D6 /* Pods_MChatAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		292D7F33762A3BADA1F673B2 /* Pods-MChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		3F750B6220E8F17000C80644 /* MChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F750B6520E8F17000C80644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F750B6720E8F17000C80644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		3F750B8120E8F17000C80644 /* MChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F750B8520E8F17000C80644 /* MChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChatAppUITests.swift; sourceTree = "<group>"; };
 		3F750B8720E8F17000C80644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56DD3E5BD4EF95F43EF05095 /* Pods-MChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MChatAppTests/Pods-MChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		775CECFED360967DDBF04F33 /* Pods-MChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8419A237DE690FD5E163E58D /* Pods_MChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF60FCD7093C32143B949799 /* Pods_MChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50CDB343234A048FB250B3A /* Pods-MChatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MChatAppTests/Pods-MChatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD99A9F7ED711EAC2086BA7 /* Pods-MChatAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MChatAppUITests/Pods-MChatAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0CC0191E85226E9E3AAE4D6 /* Pods_MChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1ED08ABD2F9C364BEE1A0C1 /* Pods-MChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MChatAppUITests/Pods-MChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3DE412F409B9811DB1D537 /* Pods_MChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9616622D417670E90B956A87 /* Pods_MChatAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C3B85A3FF6EB8FAAB61130 /* Pods_MChatAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E41DFE3A448129470A61602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF60FCD7093C32143B949799 /* Pods_MChatApp.framework */,
+				F0CC0191E85226E9E3AAE4D6 /* Pods_MChatAppTests.framework */,
+				8419A237DE690FD5E163E58D /* Pods_MChatAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F47FC5F2B1B9445E64F3BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				775CECFED360967DDBF04F33 /* Pods-MChatApp.debug.xcconfig */,
+				292D7F33762A3BADA1F673B2 /* Pods-MChatApp.release.xcconfig */,
+				D50CDB343234A048FB250B3A /* Pods-MChatAppTests.debug.xcconfig */,
+				56DD3E5BD4EF95F43EF05095 /* Pods-MChatAppTests.release.xcconfig */,
+				F1ED08ABD2F9C364BEE1A0C1 /* Pods-MChatAppUITests.debug.xcconfig */,
+				EDD99A9F7ED711EAC2086BA7 /* Pods-MChatAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3F750B5920E8F17000C80644 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				3F750B7920E8F17000C80644 /* MChatAppTests */,
 				3F750B8420E8F17000C80644 /* MChatAppUITests */,
 				3F750B6320E8F17000C80644 /* Products */,
+				3F47FC5F2B1B9445E64F3BF5 /* Pods */,
+				2E41DFE3A448129470A61602 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +139,13 @@
 		3F750B6420E8F17000C80644 /* MChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				3F750B9320E8FA6C00C80644 /* ViewControllers */,
 				3F750B6520E8F17000C80644 /* AppDelegate.swift */,
-				3F750B6720E8F17000C80644 /* ViewController.swift */,
 				3F750B6920E8F17000C80644 /* Main.storyboard */,
 				3F750B6C20E8F17000C80644 /* Assets.xcassets */,
 				3F750B6E20E8F17000C80644 /* LaunchScreen.storyboard */,
 				3F750B7120E8F17000C80644 /* Info.plist */,
+				3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */,
 			);
 			path = MChatApp;
 			sourceTree = "<group>";
@@ -125,6 +168,14 @@
 			path = MChatAppUITests;
 			sourceTree = "<group>";
 		};
+		3F750B9320E8FA6C00C80644 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F750B6720E8F17000C80644 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F750B8A20E8F17000C80644 /* Build configuration list for PBXNativeTarget "MChatApp" */;
 			buildPhases = (
+				5C361A0CF52C8DC094B55BCD /* [CP] Check Pods Manifest.lock */,
 				3F750B5E20E8F17000C80644 /* Sources */,
 				3F750B5F20E8F17000C80644 /* Frameworks */,
 				3F750B6020E8F17000C80644 /* Resources */,
+				5452169F0CA800CD51CBACE5 /* [CP] Embed Pods Frameworks */,
+				AAA4241F12635B894776F3EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F750B8D20E8F17000C80644 /* Build configuration list for PBXNativeTarget "MChatAppTests" */;
 			buildPhases = (
+				4CCDF5DB62D26F5493201D07 /* [CP] Check Pods Manifest.lock */,
 				3F750B7220E8F17000C80644 /* Sources */,
 				3F750B7320E8F17000C80644 /* Frameworks */,
 				3F750B7420E8F17000C80644 /* Resources */,
+				2240B9BCF2CDDB1EA66FC496 /* [CP] Embed Pods Frameworks */,
+				75B110E2BF21149B1FD292F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F750B9020E8F17000C80644 /* Build configuration list for PBXNativeTarget "MChatAppUITests" */;
 			buildPhases = (
+				FFB67D27BA7CFC63CE6EF9E9 /* [CP] Check Pods Manifest.lock */,
 				3F750B7D20E8F17000C80644 /* Sources */,
 				3F750B7E20E8F17000C80644 /* Frameworks */,
 				3F750B7F20E8F17000C80644 /* Resources */,
+				6F2577F4047B79911516159F /* [CP] Embed Pods Frameworks */,
+				34F8C133CAFE5EB5E2A8EAE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F750B7020E8F17000C80644 /* LaunchScreen.storyboard in Resources */,
+				3F750B9520E8FACA00C80644 /* GoogleService-Info.plist in Resources */,
 				3F750B6D20E8F17000C80644 /* Assets.xcassets in Resources */,
 				3F750B6B20E8F17000C80644 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +314,165 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2240B9BCF2CDDB1EA66FC496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatAppTests/Pods-MChatAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34F8C133CAFE5EB5E2A8EAE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatAppUITests/Pods-MChatAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CCDF5DB62D26F5493201D07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MChatAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5452169F0CA800CD51CBACE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C361A0CF52C8DC094B55BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F2577F4047B79911516159F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatAppUITests/Pods-MChatAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75B110E2BF21149B1FD292F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatAppTests/Pods-MChatAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA4241F12635B894776F3EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB67D27BA7CFC63CE6EF9E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MChatAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F750B5E20E8F17000C80644 /* Sources */ = {
@@ -424,6 +644,7 @@
 		};
 		3F750B8B20E8F17000C80644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775CECFED360967DDBF04F33 /* Pods-MChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +660,7 @@
 		};
 		3F750B8C20E8F17000C80644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292D7F33762A3BADA1F673B2 /* Pods-MChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +676,7 @@
 		};
 		3F750B8E20E8F17000C80644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50CDB343234A048FB250B3A /* Pods-MChatAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +694,7 @@
 		};
 		3F750B8F20E8F17000C80644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DD3E5BD4EF95F43EF05095 /* Pods-MChatAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +712,7 @@
 		};
 		3F750B9120E8F17000C80644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1ED08ABD2F9C364BEE1A0C1 /* Pods-MChatAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +729,7 @@
 		};
 		3F750B9220E8F17000C80644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD99A9F7ED711EAC2086BA7 /* Pods-MChatAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
