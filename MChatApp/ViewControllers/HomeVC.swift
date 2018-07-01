@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  MChatApp
 //
 //  Created by Dedeepya reddy Salla on 7/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
