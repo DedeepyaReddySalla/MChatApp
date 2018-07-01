@@ -6,19 +6,26 @@
 //  Copyright © 2018 Motion Mentoring Org. All rights reserved.
 //
 
+//        let firebaseAuth = Auth.auth()
+//            do {
+//                try Auth.auth().signOut()
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//            catch {
+//            }
+
+
 import UIKit
 import MessageUI
 import FirebaseAuth
 import GoogleSignIn
 
-class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate {
+class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate, UIPopoverPresentationControllerDelegate {
     @IBOutlet weak var userNameLBL: UILabel!
      var userName:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,13 +33,18 @@ class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //        let firebaseAuth = Auth.auth()
-    //            do {
-    //                try Auth.auth().signOut()
-    //                self.navigationController?.popViewController(animated: true)
-    //            }
-    //            catch {
-    //            }
+    @IBAction func signOutPopUp(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier:"popOver") as! SignOutPopVC
+        vc.preferredContentSize = CGSize(width:100, height:100)
+        vc.modalPresentationStyle = UIModalPresentationStyle.popover
+        let popOver = vc.popoverPresentationController
+        popOver?.delegate = self
+        popOver?.barButtonItem = sender as? UIBarButtonItem
+        self.present(vc, animated:true, completion:nil)
+    }
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
     
     @IBAction func signOut(_ sender: Any) {
         if Auth.auth().currentUser != nil {
@@ -42,6 +54,11 @@ class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate {
             //you will be directed to home page
             self.navigationController?.popViewController(animated: true)
         }
+    }
+    
+    func dismissCurrentVC()
+    {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func submitQstn(_ sender: Any) {

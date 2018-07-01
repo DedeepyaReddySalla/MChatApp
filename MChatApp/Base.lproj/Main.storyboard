@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -99,14 +100,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-Zz-Bwe">
-                                <rect key="frame" x="265" y="51" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="signOut:" destination="o19-ax-ta9" eventType="touchUpInside" id="7pr-6r-pqO"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v6i-iU-YeM">
                                 <rect key="frame" x="67" y="192" width="275" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,17 +123,68 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-Zz-Bwe">
+                                <rect key="frame" x="191" y="104" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Ads-G6-EJj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yTI-W1-MJK">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Con" id="3IP-ve-fkn">
+                                <connections>
+                                    <action selector="signOutPopUp:" destination="o19-ax-ta9" id="IDW-pp-6Tj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Home" id="djn-Zs-CZf"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="userNameLBL" destination="iBb-q9-eZL" id="N1z-Fs-WW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yP-7F-5zP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1680.8" y="-568.06596701649175"/>
+        </scene>
+        <!--Sign Out PopVC-->
+        <scene sceneID="50N-tm-HXs">
+            <objects>
+                <viewController storyboardIdentifier="popOver" id="Uc2-hi-MVI" customClass="SignOutPopVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLs-90-xsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cad-tN-KXE">
+                                <rect key="frame" x="157.5" y="328.5" width="60" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="Uc2-hi-MVI" eventType="touchUpInside" id="lim-7D-lyp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rt-jY-53h">
+                                <rect key="frame" x="157.5" y="286" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cad-tN-KXE" firstAttribute="centerY" secondItem="wYy-eP-s6m" secondAttribute="centerY" id="8pA-YH-sWh"/>
+                            <constraint firstItem="cad-tN-KXE" firstAttribute="centerX" secondItem="wYy-eP-s6m" secondAttribute="centerX" id="IbZ-YP-Upb"/>
+                            <constraint firstItem="cad-tN-KXE" firstAttribute="top" secondItem="2rt-jY-53h" secondAttribute="bottom" constant="21.5" id="tQ8-Vq-YEr"/>
+                            <constraint firstItem="2rt-jY-53h" firstAttribute="leading" secondItem="cad-tN-KXE" secondAttribute="leading" id="wUy-Mq-QdR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wYy-eP-s6m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AY-kh-sqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.8000000000002" y="-580.65967016491754"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="wef-t2-FEn">
@@ -165,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAR-93-lFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="-419"/>
+            <point key="canvasLocation" x="234" y="-579"/>
         </scene>
         <!--Moods TableVC-->
         <scene sceneID="ToV-EX-VlD">
@@ -303,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5D-Tm-4k3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898" y="-1092"/>
+            <point key="canvasLocation" x="1170" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UeJ-Hw-bCp">
@@ -340,6 +384,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQt-Rx-hzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="23" y="772"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YpD-sU-cKX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hCo-VM-ik7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nwd-be-Iox">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o19-ax-ta9" kind="relationship" relationship="rootViewController" id="WNZ-fX-BrV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A55-uy-HFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="-580"/>
         </scene>
     </scenes>
 </document>
