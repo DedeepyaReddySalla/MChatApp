@@ -71,6 +71,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <color key="tintColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Ask a Question!"/>
+                                <connections>
+                                    <action selector="askQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fq5-nQ-fie"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,10 +91,86 @@
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="101.19940029985008"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit QstnVC-->
+        <scene sceneID="LRv-O7-5bb">
+            <objects>
+                <viewController storyboardIdentifier="SubmitQstnVCIden" id="o19-ax-ta9" customClass="SubmitQstnVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYw-1T-CrS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-Zz-Bwe">
+                                <rect key="frame" x="265" y="51" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="o19-ax-ta9" eventType="touchUpInside" id="7pr-6r-pqO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v6i-iU-YeM">
+                                <rect key="frame" x="67" y="192" width="275" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqB-Jh-5Wb">
+                                <rect key="frame" x="264" y="468" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitQstn:" destination="o19-ax-ta9" eventType="touchUpInside" id="klL-FS-Lso"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBb-q9-eZL">
+                                <rect key="frame" x="274" y="104" width="42" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Ads-G6-EJj"/>
+                    </view>
+                    <connections>
+                        <outlet property="userNameLBL" destination="iBb-q9-eZL" id="N1z-Fs-WW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yP-7F-5zP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="122.78860569715144"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="wef-t2-FEn">
+            <objects>
+                <viewController storyboardIdentifier="SignInIden" id="1kH-xs-HwA" customClass="SignInVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNW-tO-dTv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FzX-3m-7um" customClass="GIDSignInButton">
+                                <rect key="frame" x="76" y="170" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="2aQ-pE-wjK"/>
+                    </view>
+                    <connections>
+                        <outlet property="googlSignInCustomBtn" destination="FzX-3m-7um" id="9sT-Sp-5Lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAR-93-lFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="-419"/>
+        </scene>
+        <!--Moods TableVC-->
         <scene sceneID="ToV-EX-VlD">
             <objects>
-                <viewController id="OsJ-Lh-ReH" sceneMemberID="viewController">
+                <viewController id="OsJ-Lh-ReH" customClass="MoodsTableVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EhG-z1-AOd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="855.20000000000005" y="772.26386806596713"/>
         </scene>
-        <!--View Controller-->
+        <!--Moods AssesorVC-->
         <scene sceneID="2YJ-Lh-7N0">
             <objects>
-                <viewController id="WW3-X9-jwC" sceneMemberID="viewController">
+                <viewController id="WW3-X9-jwC" customClass="MoodsAssesorVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5I-5i-ixh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="1576.8" y="787.55622188905556"/>
         </scene>
-        <!--View Controller-->
+        <!--DisclaimerVC-->
         <scene sceneID="bkp-2q-P1h">
             <objects>
-                <viewController id="jJu-JH-XpB" sceneMemberID="viewController">
+                <viewController id="jJu-JH-XpB" customClass="DisclaimerVC" customModule="MChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yt7-eX-ySm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5D-Tm-4k3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1147" y="100"/>
+            <point key="canvasLocation" x="1898" y="-1092"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UeJ-Hw-bCp">

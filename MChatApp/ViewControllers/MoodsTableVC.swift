@@ -1,5 +1,5 @@
 //
-//  ModdsTableVC.swift
+//  MoodsTableVC.swift
 //  MChatApp
 //
 //  Created by Dedeepya reddy Salla on 7/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ModdsTableVC: UIViewController {
+class MoodsTableVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
