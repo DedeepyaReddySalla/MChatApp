@@ -38,6 +38,8 @@ class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate {
         if Auth.auth().currentUser != nil {
             UserDefaults.standard.set(false, forKey: "userLoggedIn")
             GIDSignIn.sharedInstance().signOut()
+            //remove the signIn VC from navigation stack array, so when you pop this vc..
+            //you will be directed to home page
             self.navigationController?.popViewController(animated: true)
         }
     }

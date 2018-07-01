@@ -14,12 +14,12 @@
 		3F750B7020E8F17000C80644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F750B6E20E8F17000C80644 /* LaunchScreen.storyboard */; };
 		3F750B7B20E8F17000C80644 /* MChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B7A20E8F17000C80644 /* MChatAppTests.swift */; };
 		3F750B8620E8F17000C80644 /* MChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B8520E8F17000C80644 /* MChatAppUITests.swift */; };
-		3F750B9520E8FACA00C80644 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */; };
 		3F750B9820E9155700C80644 /* DisclaimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B9720E9155700C80644 /* DisclaimerVC.swift */; };
 		3F750B9A20E9157C00C80644 /* MoodsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B9920E9157C00C80644 /* MoodsTableVC.swift */; };
 		3F750B9C20E9159000C80644 /* MoodsAssesorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B9B20E9159000C80644 /* MoodsAssesorVC.swift */; };
 		3F750B9E20E9182A00C80644 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B9D20E9182A00C80644 /* SignInVC.swift */; };
 		3F750BA020E9190C00C80644 /* SubmitQstnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F750B9F20E9190C00C80644 /* SubmitQstnVC.swift */; };
+		3FC5A62B20E9408B0076163D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FC5A62A20E9408B0076163D /* GoogleService-Info.plist */; };
 		4F3DE412F409B9811DB1D537 /* Pods_MChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF60FCD7093C32143B949799 /* Pods_MChatApp.framework */; };
 		76C3B85A3FF6EB8FAAB61130 /* Pods_MChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8419A237DE690FD5E163E58D /* Pods_MChatAppUITests.framework */; };
 		9616622D417670E90B956A87 /* Pods_MChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC0191E85226E9E3AAE4D6 /* Pods_MChatAppTests.framework */; };
@@ -57,13 +57,13 @@
 		3F750B8120E8F17000C80644 /* MChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F750B8520E8F17000C80644 /* MChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChatAppUITests.swift; sourceTree = "<group>"; };
 		3F750B8720E8F17000C80644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F750B9620E90FBB00C80644 /* MChatApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MChatApp.entitlements; sourceTree = "<group>"; };
 		3F750B9720E9155700C80644 /* DisclaimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerVC.swift; sourceTree = "<group>"; };
 		3F750B9920E9157C00C80644 /* MoodsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsTableVC.swift; sourceTree = "<group>"; };
 		3F750B9B20E9159000C80644 /* MoodsAssesorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsAssesorVC.swift; sourceTree = "<group>"; };
 		3F750B9D20E9182A00C80644 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		3F750B9F20E9190C00C80644 /* SubmitQstnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitQstnVC.swift; sourceTree = "<group>"; };
+		3FC5A62A20E9408B0076163D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56DD3E5BD4EF95F43EF05095 /* Pods-MChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MChatAppTests/Pods-MChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		775CECFED360967DDBF04F33 /* Pods-MChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MChatApp/Pods-MChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8419A237DE690FD5E163E58D /* Pods_MChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,7 @@
 				3F750B6C20E8F17000C80644 /* Assets.xcassets */,
 				3F750B6E20E8F17000C80644 /* LaunchScreen.storyboard */,
 				3F750B7120E8F17000C80644 /* Info.plist */,
-				3F750B9420E8FACA00C80644 /* GoogleService-Info.plist */,
+				3FC5A62A20E9408B0076163D /* GoogleService-Info.plist */,
 				3F750B9620E90FBB00C80644 /* MChatApp.entitlements */,
 			);
 			path = MChatApp;
@@ -315,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F750B7020E8F17000C80644 /* LaunchScreen.storyboard in Resources */,
-				3F750B9520E8FACA00C80644 /* GoogleService-Info.plist in Resources */,
+				3FC5A62B20E9408B0076163D /* GoogleService-Info.plist in Resources */,
 				3F750B6D20E8F17000C80644 /* Assets.xcassets in Resources */,
 				3F750B6B20E8F17000C80644 /* Main.storyboard in Resources */,
 			);

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>1009436120986-3rvlq7gmdut0prfd6no3k89gub2nrbrl.apps.googleusercontent.com</string>
+	<string>508146961814-3f8bkose0l95a713mkblo700m9eui9tb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1009436120986-3rvlq7gmdut0prfd6no3k89gub2nrbrl</string>
+	<string>com.googleusercontent.apps.508146961814-3f8bkose0l95a713mkblo700m9eui9tb</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDmZmDDuE3YWdRJpKNqaXw_5IBr1Uo57VI</string>
+	<string>AIzaSyBg807-LEEwHxzzcSQOZ2XHLoRyAHjnCHw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1009436120986</string>
+	<string>508146961814</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>www.motionmentoring.org.MChatApp</string>
+	<string>www.motionmentoring.org.MChatOriginal</string>
 	<key>PROJECT_ID</key>
-	<string>mchatapp-ced8f</string>
+	<string>mchatf-fdf39</string>
 	<key>STORAGE_BUCKET</key>
-	<string>mchatapp-ced8f.appspot.com</string>
+	<string>mchatf-fdf39.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1009436120986:ios:cec9dc758b40f397</string>
+	<string>1:508146961814:ios:071f41ff6c84a9bc</string>
 	<key>DATABASE_URL</key>
-	<string>https://mchatapp-ced8f.firebaseio.com</string>
+	<string>https://mchatf-fdf39.firebaseio.com</string>
 </dict>
 </plist>
