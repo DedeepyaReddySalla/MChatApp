@@ -20,7 +20,8 @@ import MessageUI
 import FirebaseAuth
 import GoogleSignIn
 
-class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate, UIPopoverPresentationControllerDelegate {
+
+class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate, UIPopoverPresentationControllerDelegate, signOutDelegate {
     @IBOutlet weak var userNameLBL: UILabel!
      var userName:String?
     
@@ -33,8 +34,9 @@ class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate, UIPop
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signOutPopUp(_ sender: Any) {
+    @IBAction func profile(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier:"popOver") as! SignOutPopVC
+        vc.signOutDelegate = self
         vc.preferredContentSize = CGSize(width:100, height:100)
         vc.modalPresentationStyle = UIModalPresentationStyle.popover
         let popOver = vc.popoverPresentationController
@@ -46,18 +48,21 @@ class SubmitQstnVC: UIViewController, MFMailComposeViewControllerDelegate, UIPop
         return .none
     }
     
-    @IBAction func signOut(_ sender: Any) {
+    
+    //in signOut first, app is signed out from firebase and then submit vc is removed from stack
+    func signOut(){
         if Auth.auth().currentUser != nil {
             UserDefaults.standard.set(false, forKey: "userLoggedIn")
             GIDSignIn.sharedInstance().signOut()
-            //remove the signIn VC from navigation stack array, so when you pop this vc..
-            //you will be directed to home page
-            self.navigationController?.popViewController(animated: true)
         }
+        self.goToHomePage()
     }
-    
-    func dismissCurrentVC()
+
+    func goToHomePage()
     {
+        /*check if you have sign in vc in stack, if it is present then first
+         remove the signIn VC from navigation stack array, so when you pop this vc..
+         you will be directed to home page */
         self.navigationController?.popViewController(animated: true)
     }
     

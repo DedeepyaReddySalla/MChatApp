@@ -56,6 +56,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <color key="tintColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign In / Register"/>
+                                <connections>
+                                    <action selector="askQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wID-u0-IEI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N00-xc-nUv">
                                 <rect key="frame" x="95" y="350" width="185" height="55"/>
@@ -136,7 +139,7 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Con" id="3IP-ve-fkn">
                                 <connections>
-                                    <action selector="signOutPopUp:" destination="o19-ax-ta9" id="IDW-pp-6Tj"/>
+                                    <action selector="profile:" destination="o19-ax-ta9" id="b08-Zu-lvQ"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Home" id="djn-Zs-CZf"/>

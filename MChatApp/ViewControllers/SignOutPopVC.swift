@@ -10,8 +10,12 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 
-class SignOutPopVC: UIViewController {
+protocol signOutDelegate {
+    func signOut()
+}
 
+class SignOutPopVC: UIViewController {
+    var signOutDelegate : signOutDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,18 +27,13 @@ class SignOutPopVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //First pop-up is dismissed and then sign out functionality is implemented
     @IBAction func signOut(_ sender: Any) {
-        if Auth.auth().currentUser != nil {
-            UserDefaults.standard.set(false, forKey: "userLoggedIn")
-            GIDSignIn.sharedInstance().signOut()
-            //1.remove the signIn VC from navigation stack array, so when you pop this vc..
-            //you will be directed to home page
-            //2.Then do popping for submit VC
-            
-//            self.navigationController?.popViewController(animated: true)
-        }
-        
+        self.dismiss(animated:true, completion:nil)
+        signOutDelegate?.signOut()
     }
+    
+   
     
     /*
     // MARK: - Navigation
